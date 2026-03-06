@@ -1,0 +1,36 @@
+{
+    "folders": [
+      {
+        "name": "Server",
+        "path": "."
+      },
+      {
+        "name": "UnityProject",
+        "path": "./Client/FantasyLearnClient"
+      }
+    ],
+    "settings": {
+      // 全局工作区设置
+      "files.exclude": {
+        "**/Client": true  // 在主项目中隐藏子文件夹，避免重复显示
+      },
+      "editor.tabSize": 4,
+      "files.autoSave": "afterDelay",
+      "dotrush.roslyn.projectOrSolutionFiles": [
+        "F:\\UnityGit\\FantasyLearnServer\\FantansyLearnServer\\Client\\FantasyLearnClient\\FantasyLearnClient.sln"
+      ],
+      "dotnet.defaultSolution": "UnityProject/FantasyLearnClient.sln"
+    },
+    "launch": {
+      "version": "0.2.0",
+      "configurations": [
+        // Unity 调试配置（主活动项目）
+        {
+          "name": "Unity Debugger",
+          "type": "unity",
+          "request": "attach",
+          "cwd": "${workspaceFolder:UnityProject}"
+        }
+      ]
+    },
+}

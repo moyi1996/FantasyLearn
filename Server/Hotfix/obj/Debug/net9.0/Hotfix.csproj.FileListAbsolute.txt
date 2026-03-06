@@ -1,0 +1,17 @@
+F:\UnityGit\FantasyLearnServer\FantansyLearnServer\Server\Hotfix\bin\Debug\net9.0\Fantasy.config
+F:\UnityGit\FantasyLearnServer\FantansyLearnServer\Server\Hotfix\bin\Debug\net9.0\Fantasy.xsd
+F:\UnityGit\FantasyLearnServer\FantansyLearnServer\Server\Hotfix\bin\Debug\net9.0\Hotfix.deps.json
+F:\UnityGit\FantasyLearnServer\FantansyLearnServer\Server\Hotfix\bin\Debug\net9.0\Hotfix.dll
+F:\UnityGit\FantasyLearnServer\FantansyLearnServer\Server\Hotfix\bin\Debug\net9.0\Hotfix.pdb
+F:\UnityGit\FantasyLearnServer\FantansyLearnServer\Server\Hotfix\bin\Debug\net9.0\Entity.dll
+F:\UnityGit\FantasyLearnServer\FantansyLearnServer\Server\Hotfix\bin\Debug\net9.0\Entity.pdb
+F:\UnityGit\FantasyLearnServer\FantansyLearnServer\Server\Hotfix\obj\Debug\net9.0\Hotfix.csproj.AssemblyReference.cache
+F:\UnityGit\FantasyLearnServer\FantansyLearnServer\Server\Hotfix\obj\Debug\net9.0\Hotfix.GeneratedMSBuildEditorConfig.editorconfig
+F:\UnityGit\FantasyLearnServer\FantansyLearnServer\Server\Hotfix\obj\Debug\net9.0\Hotfix.AssemblyInfoInputs.cache
+F:\UnityGit\FantasyLearnServer\FantansyLearnServer\Server\Hotfix\obj\Debug\net9.0\Hotfix.AssemblyInfo.cs
+F:\UnityGit\FantasyLearnServer\FantansyLearnServer\Server\Hotfix\obj\Debug\net9.0\Hotfix.csproj.CoreCompileInputs.cache
+F:\UnityGit\FantasyLearnServer\FantansyLearnServer\Server\Hotfix\obj\Debug\net9.0\Hotfix.csproj.Up2Date
+F:\UnityGit\FantasyLearnServer\FantansyLearnServer\Server\Hotfix\obj\Debug\net9.0\Hotfix.dll
+F:\UnityGit\FantasyLearnServer\FantansyLearnServer\Server\Hotfix\obj\Debug\net9.0\refint\Hotfix.dll
+F:\UnityGit\FantasyLearnServer\FantansyLearnServer\Server\Hotfix\obj\Debug\net9.0\Hotfix.pdb
+F:\UnityGit\FantasyLearnServer\FantansyLearnServer\Server\Hotfix\obj\Debug\net9.0\ref\Hotfix.dll

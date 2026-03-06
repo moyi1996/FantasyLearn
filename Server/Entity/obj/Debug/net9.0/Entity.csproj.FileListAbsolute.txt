@@ -1,0 +1,14 @@
+F:\UnityGit\FantasyLearnServer\FantansyLearnServer\Server\Entity\bin\Debug\net9.0\Fantasy.config
+F:\UnityGit\FantasyLearnServer\FantansyLearnServer\Server\Entity\bin\Debug\net9.0\Fantasy.xsd
+F:\UnityGit\FantasyLearnServer\FantansyLearnServer\Server\Entity\bin\Debug\net9.0\Entity.deps.json
+F:\UnityGit\FantasyLearnServer\FantansyLearnServer\Server\Entity\bin\Debug\net9.0\Entity.dll
+F:\UnityGit\FantasyLearnServer\FantansyLearnServer\Server\Entity\bin\Debug\net9.0\Entity.pdb
+F:\UnityGit\FantasyLearnServer\FantansyLearnServer\Server\Entity\obj\Debug\net9.0\Entity.csproj.AssemblyReference.cache
+F:\UnityGit\FantasyLearnServer\FantansyLearnServer\Server\Entity\obj\Debug\net9.0\Entity.GeneratedMSBuildEditorConfig.editorconfig
+F:\UnityGit\FantasyLearnServer\FantansyLearnServer\Server\Entity\obj\Debug\net9.0\Entity.AssemblyInfoInputs.cache
+F:\UnityGit\FantasyLearnServer\FantansyLearnServer\Server\Entity\obj\Debug\net9.0\Entity.AssemblyInfo.cs
+F:\UnityGit\FantasyLearnServer\FantansyLearnServer\Server\Entity\obj\Debug\net9.0\Entity.csproj.CoreCompileInputs.cache
+F:\UnityGit\FantasyLearnServer\FantansyLearnServer\Server\Entity\obj\Debug\net9.0\Entity.dll
+F:\UnityGit\FantasyLearnServer\FantansyLearnServer\Server\Entity\obj\Debug\net9.0\refint\Entity.dll
+F:\UnityGit\FantasyLearnServer\FantansyLearnServer\Server\Entity\obj\Debug\net9.0\Entity.pdb
+F:\UnityGit\FantasyLearnServer\FantansyLearnServer\Server\Entity\obj\Debug\net9.0\ref\Entity.dll
