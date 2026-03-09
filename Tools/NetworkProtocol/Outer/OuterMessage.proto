@@ -27,6 +27,11 @@ message G2C_TestResponse // IResponse
 	string Tag = 1;
 }
 
+message G2C_TestMessage // IMessage
+{
+	string Message = 1;
+}
+
 message G2C_Notification // IResponse
 {
 	string Message = 1;

@@ -9,7 +9,7 @@
             "Comment": "ProtoBuf生成到服务端的文件夹位置"
         },
         "NetworkProtocolClientDirectory": {
-            "Value": "F:/UnityGit/FantasyLearnClient/Assets/Scripts/Generate/NetworkProtocol",
+            "Value": "F:/UnityGit/FantasyLearnServer/FantansyLearnServer/Client/FantasyLearnClient/Assets/Scripts/Generate/NetworkProtocol",
             "Comment": "ProtoBuf生成到客户端的文件夹位置"
         }
     }

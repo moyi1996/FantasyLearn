@@ -12,10 +12,10 @@ namespace Fantasy.Hotfix.Handler
             Log.Debug($"收到客户端消息: Tag={message.Tag}");
 
             // 可以通过 session 回复消息
-            // session.Send(new G2C_Notification
-            // {
-            //     Message = $"服务器收到了你的消息: {message.Tag}"
-            // });
+            session.Send(new G2C_TestMessage()
+            {
+                Message = $"服务器收到了你的消息: {message.Tag}"
+            });
 
             await FTask.CompletedTask;
         }

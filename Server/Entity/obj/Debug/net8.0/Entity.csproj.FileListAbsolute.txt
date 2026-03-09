@@ -12,3 +12,4 @@ F:\UnityGit\FantasyLearnServer\FantansyLearnServer\Server\Entity\obj\Debug\net8.
 F:\UnityGit\FantasyLearnServer\FantansyLearnServer\Server\Entity\obj\Debug\net8.0\refint\Entity.dll
 F:\UnityGit\FantasyLearnServer\FantansyLearnServer\Server\Entity\obj\Debug\net8.0\Entity.pdb
 F:\UnityGit\FantasyLearnServer\FantansyLearnServer\Server\Entity\obj\Debug\net8.0\ref\Entity.dll
+F:\UnityGit\FantasyLearnServer\FantansyLearnServer\Server\Entity\obj\Debug\net8.0\Entity.sourcelink.json

@@ -32,6 +32,18 @@ namespace Fantasy
 			C2G_TestRequest_request.Tag = tag;
 			return (G2C_TestResponse)await session.Call(C2G_TestRequest_request);
 		}
+		[MethodImpl(MethodImplOptions.AggressiveInlining)]
+		public static void G2C_TestMessage(this Session session, G2C_TestMessage G2C_TestMessage_message)
+		{
+			session.Send(G2C_TestMessage_message);
+		}
+		[MethodImpl(MethodImplOptions.AggressiveInlining)]
+		public static void G2C_TestMessage(this Session session, string message)
+		{
+			using var G2C_TestMessage_message = Fantasy.G2C_TestMessage.Create();
+			G2C_TestMessage_message.Message = message;
+			session.Send(G2C_TestMessage_message);
+		}
 
    }
 }

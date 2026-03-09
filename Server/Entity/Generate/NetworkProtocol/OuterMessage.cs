@@ -153,6 +153,47 @@ namespace Fantasy
     }
     [Serializable]
     [ProtoContract]
+    public partial class G2C_TestMessage : AMessage, IMessage
+    {
+        public static G2C_TestMessage Create(bool autoReturn = true)
+        {
+            var g2C_TestMessage = MessageObjectPool<G2C_TestMessage>.Rent();
+            g2C_TestMessage.AutoReturn = autoReturn;
+            
+            if (!autoReturn)
+            {
+                g2C_TestMessage.SetIsPool(false);
+            }
+            
+            return g2C_TestMessage;
+        }
+        
+        public void Return()
+        {
+            if (!AutoReturn)
+            {
+                SetIsPool(true);
+                AutoReturn = true;
+            }
+            else if (!IsPool())
+            {
+                return;
+            }
+            Dispose();
+        }
+
+        public void Dispose()
+        {
+            if (!IsPool()) return; 
+            Message = default;
+            MessageObjectPool<G2C_TestMessage>.Return(this);
+        }
+        public uint OpCode() { return OuterOpcode.G2C_TestMessage; } 
+        [ProtoMember(1)]
+        public string Message { get; set; }
+    }
+    [Serializable]
+    [ProtoContract]
     public partial class G2C_Notification : AMessage, IResponse
     {
         public static G2C_Notification Create(bool autoReturn = true)
