@@ -39,15 +39,15 @@ public class QuickStart : MonoBehaviour
         _session.C2G_TestMessage("Hello, Fantasy!");
 
         //发送一个RPC消息
-        // var response = (G2C_TestResponse)await _session.Call(new C2G_TestRequest() { Tag = "Hello, Fantasy!" });
-        // if (response.ErrorCode != 0)
-        // {
-        //     Debug.LogError("response: " + response.ErrorCode);
-        // }
-        // else
-        // { 
-        //     Debug.Log("response: " + response.Tag);
-        // }
+        var response = (G2C_TestResponse)await _session.Call(new C2G_TestRequest() { Tag = "李四" });
+        if (response.ErrorCode != 0)
+        {
+            Debug.LogError("response: " + response.ErrorCode);
+        }
+        else
+        { 
+            Debug.Log("response: " + response.Tag);
+        }
 
         // var response2 = await _session.C2G_TestRequest("Hello, Fantasy!");
         // Debug.Log("response2: " + response2.Tag + " ErrorCode: " + response2.ErrorCode);

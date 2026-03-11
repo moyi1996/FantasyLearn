@@ -31,7 +31,7 @@
           }
         }
       },
-      "Fantasy-Net/2026.0.1000": {
+      "Fantasy-Net/2026.0.1001": {
         "type": "package",
         "dependencies": {
           "CommandLineParser": "2.9.1",
@@ -320,7 +320,7 @@
           }
         }
       },
-      "Fantasy-Net/2026.0.1000": {
+      "Fantasy-Net/2026.0.1001": {
         "type": "package",
         "dependencies": {
           "CommandLineParser": "2.9.1",
@@ -610,10 +610,10 @@
         "lib/netstandard2.1/DnsClient.xml"
       ]
     },
-    "Fantasy-Net/2026.0.1000": {
-      "sha512": "qENT+d33y+1l48OcUuuwLWOfWApGRm52uhdnRTig895A2539HkQp5jj2GM1x3s2Z10uF9AUkymGuMJTNpxy5nQ==",
+    "Fantasy-Net/2026.0.1001": {
+      "sha512": "TYm3GV14VUMs28s3nTNTmRpycoxCttlIV0gLqIE5MPLSP9tcke7aCYZY1HuDt5YMjw5T7NCob0/VuIFAbIhdLA==",
       "type": "package",
-      "path": "fantasy-net/2026.0.1000",
+      "path": "fantasy-net/2026.0.1001",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -635,7 +635,7 @@
         "buildTransitive/modules/CopyTemplate.targets",
         "buildTransitive/modules/CopyToOutput.targets",
         "buildTransitive/modules/DefineConstants.targets",
-        "fantasy-net.2026.0.1000.nupkg.sha512",
+        "fantasy-net.2026.0.1001.nupkg.sha512",
         "fantasy-net.nuspec",
         "icon.png",
         "lib/net10.0/Fantasy-Net.dll",
@@ -1090,11 +1090,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\UnityGit\\FantasyLearnServer\\FantansyLearnServer\\Server\\Entity\\Entity.csproj",
+      "projectUniqueName": "f:\\UnityGit\\FantasyLearnServer\\FantansyLearnServer\\Server\\Entity\\Entity.csproj",
       "projectName": "Entity",
-      "projectPath": "F:\\UnityGit\\FantasyLearnServer\\FantansyLearnServer\\Server\\Entity\\Entity.csproj",
+      "projectPath": "f:\\UnityGit\\FantasyLearnServer\\FantansyLearnServer\\Server\\Entity\\Entity.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "F:\\UnityGit\\FantasyLearnServer\\FantansyLearnServer\\Server\\Entity\\obj\\",
+      "outputPath": "f:\\UnityGit\\FantasyLearnServer\\FantansyLearnServer\\Server\\Entity\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [
