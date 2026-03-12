@@ -11,5 +11,8 @@ namespace Fantasy
         public const uint G2C_TestResponse = 402663185;
         public const uint G2C_TestMessage = 134227730;
         public const uint G2C_Notification = 402663186;
+        public const uint C2G_CreatePlayerRequest = 268445458;
+        public const uint G2C_CreatePlayerResponse = 402663187;
+        public const uint C2G_SendPlayerMessage = 134227731;
     }
 }

@@ -13,3 +13,44 @@ package Sining.Message;
 // 通过添加 // using 导出时添加自定义命名空间
 // 例如: // using System.Runtime // using System.Reflection
 
+message G2Player_TestMessage // IAddressMessage
+{
+    string Tag = 1;
+}
+
+message G2Player_TestRequest // IAddressRequest, Player2G_TestResponse
+{
+    string Tag = 1;
+}
+
+message Player2G_TestResponse // IAddressResponse
+{
+    string Tag = 1;
+}
+
+message G2M_TestAddressMessage // IAddressMessage
+{
+    string Tag = 1;
+}
+
+// Inner/InnerMessage.proto
+message G2M_TestAddressRequest // IAddressRequest,M2G_TestAddressResponse
+{
+    string Tag = 1;
+}
+
+message M2G_TestAddressResponse // IAddressResponse
+{
+    string Result = 1;
+}
+
+message G2Map_CreatePlayerRequest // IAddressRequest,Map2G_CreatePlayerResponse
+{
+    string Name = 1;
+    string Age = 2;
+}
+
+message Map2G_CreatePlayerResponse // IAddressResponse
+{
+    int64 PlayerAddress = 1;
+}

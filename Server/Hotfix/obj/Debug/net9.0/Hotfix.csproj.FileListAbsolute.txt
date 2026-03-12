@@ -15,3 +15,4 @@ F:\UnityGit\FantasyLearnServer\FantansyLearnServer\Server\Hotfix\obj\Debug\net9.
 F:\UnityGit\FantasyLearnServer\FantansyLearnServer\Server\Hotfix\obj\Debug\net9.0\refint\Hotfix.dll
 F:\UnityGit\FantasyLearnServer\FantansyLearnServer\Server\Hotfix\obj\Debug\net9.0\Hotfix.pdb
 F:\UnityGit\FantasyLearnServer\FantansyLearnServer\Server\Hotfix\obj\Debug\net9.0\ref\Hotfix.dll
+F:\UnityGit\FantasyLearnServer\FantansyLearnServer\Server\Hotfix\obj\Debug\net9.0\Hotfix.sourcelink.json

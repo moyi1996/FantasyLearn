@@ -32,3 +32,4 @@ F:\UnityGit\FantasyLearnServer\FantansyLearnServer\Server\Main\obj\Debug\net9.0\
 F:\UnityGit\FantasyLearnServer\FantansyLearnServer\Server\Main\obj\Debug\net9.0\Main.pdb
 F:\UnityGit\FantasyLearnServer\FantansyLearnServer\Server\Main\obj\Debug\net9.0\Main.genruntimeconfig.cache
 F:\UnityGit\FantasyLearnServer\FantansyLearnServer\Server\Main\obj\Debug\net9.0\ref\Main.dll
+F:\UnityGit\FantasyLearnServer\FantansyLearnServer\Server\Main\obj\Debug\net9.0\Main.sourcelink.json

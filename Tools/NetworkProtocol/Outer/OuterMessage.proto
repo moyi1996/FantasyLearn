@@ -36,3 +36,18 @@ message G2C_Notification // IResponse
 {
 	string Message = 1;
 }
+
+message C2G_CreatePlayerRequest // IRequest,G2C_CreatePlayerResponse
+{
+	
+}
+
+message G2C_CreatePlayerResponse // IResponse
+{
+
+}
+
+message C2G_SendPlayerMessage // IMessage
+{
+
+}

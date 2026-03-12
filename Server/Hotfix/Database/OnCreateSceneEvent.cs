@@ -16,6 +16,7 @@ public class Player : Entity, ISupportedSerialize
     public string Name { get; set; }
     public int Level { get; set; }
     public long Gold { get; set; }
+    public string Age { get; set; }
 }
 public class ItemData
 {
@@ -73,7 +74,6 @@ public sealed class OnCreateSceneEvent : AsyncEventSystem<OnCreateScene>
             case SceneType.Gate:
                 Log.Info($"Gate Scene 启动: {scene.RuntimeId}");
                 var database = scene.World.Database;
-                var fantasyMainDatabase = scene.World.SelectDatabase(DatabaseName.Fantasy_main);
                 // Gate 初始化逻辑
 
                 // var player = Entity.Create<Player>(scene, isPool: true, isRunEvent: true);
