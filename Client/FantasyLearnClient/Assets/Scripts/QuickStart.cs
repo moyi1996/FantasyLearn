@@ -12,7 +12,7 @@ public class QuickStart : MonoBehaviour
 
     private void Start()
     {
-        StartAsync().Coroutine();
+        //StartAsync().Coroutine();
     }
 
     private async FTask StartAsync()
@@ -33,27 +33,31 @@ public class QuickStart : MonoBehaviour
             OnConnectDisconnect,                  // 连接断开回调
             false,                                // 是否HTTPS请求（仅用于WebSocket）
             5000);                                // 连接超时时间（毫秒）
-        // 方式1
-        // _session.Send(new C2G_TestMessage() { Tag = "Hello, Fantasy!" });
-        // 方式2
-        _session.C2G_TestMessage("Hello, Fantasy!");
+        // // 方式1
+        // // _session.Send(new C2G_TestMessage() { Tag = "Hello, Fantasy!" });
+        // // 方式2
+        // _session.C2G_TestMessage("Hello, Fantasy!");
 
-        //发送一个RPC消息
-        var response = (G2C_TestResponse)await _session.Call(new C2G_TestRequest() { Tag = "李四" });
-        if (response.ErrorCode != 0)
-        {
-            Debug.LogError("response: " + response.ErrorCode);
-        }
-        else
-        { 
-            Debug.Log("response: " + response.Tag);
-        }
+        // //发送一个RPC消息
+        // var response = (G2C_TestResponse)await _session.Call(new C2G_TestRequest() { Tag = "李四" });
+        // if (response.ErrorCode != 0)
+        // {
+        //     Debug.LogError("response: " + response.ErrorCode);
+        // }
+        // else
+        // { 
+        //     Debug.Log("response: " + response.Tag);
+        // }
 
-        // var response2 = await _session.C2G_TestRequest("Hello, Fantasy!");
-        // Debug.Log("response2: " + response2.Tag + " ErrorCode: " + response2.ErrorCode);
-
+        // // var response2 = await _session.C2G_TestRequest("Hello, Fantasy!");
+        // // Debug.Log("response2: " + response2.Tag + " ErrorCode: " + response2.ErrorCode);
         Debug.Log("Fantasy 框架初始化完成!");
+
+
+
     }
+
+
     private void OnConnectComplete()
     {
         Log.Debug("连接成功");

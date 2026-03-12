@@ -44,6 +44,28 @@ namespace Fantasy
 			G2C_TestMessage_message.Message = message;
 			session.Send(G2C_TestMessage_message);
 		}
+		[MethodImpl(MethodImplOptions.AggressiveInlining)]
+		public static async FTask<G2C_CreatePlayerResponse> C2G_CreatePlayerRequest(this Session session, C2G_CreatePlayerRequest C2G_CreatePlayerRequest_request)
+		{
+			return (G2C_CreatePlayerResponse)await session.Call(C2G_CreatePlayerRequest_request);
+		}
+		[MethodImpl(MethodImplOptions.AggressiveInlining)]
+		public static async FTask<G2C_CreatePlayerResponse> C2G_CreatePlayerRequest(this Session session)
+		{
+			using var C2G_CreatePlayerRequest_request = Fantasy.C2G_CreatePlayerRequest.Create();
+			return (G2C_CreatePlayerResponse)await session.Call(C2G_CreatePlayerRequest_request);
+		}
+		[MethodImpl(MethodImplOptions.AggressiveInlining)]
+		public static void C2G_SendPlayerMessage(this Session session, C2G_SendPlayerMessage C2G_SendPlayerMessage_message)
+		{
+			session.Send(C2G_SendPlayerMessage_message);
+		}
+		[MethodImpl(MethodImplOptions.AggressiveInlining)]
+		public static void C2G_SendPlayerMessage(this Session session)
+		{
+			using var message = Fantasy.C2G_SendPlayerMessage.Create();
+			session.Send(message);
+		}
 
    }
 }

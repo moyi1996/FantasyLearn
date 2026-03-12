@@ -236,4 +236,123 @@ namespace Fantasy
         [ProtoMember(2)]
         public string Message { get; set; }
     }
+    [Serializable]
+    [ProtoContract]
+    public partial class C2G_CreatePlayerRequest : AMessage, IRequest
+    {
+        public static C2G_CreatePlayerRequest Create(bool autoReturn = true)
+        {
+            var c2G_CreatePlayerRequest = MessageObjectPool<C2G_CreatePlayerRequest>.Rent();
+            c2G_CreatePlayerRequest.AutoReturn = autoReturn;
+            
+            if (!autoReturn)
+            {
+                c2G_CreatePlayerRequest.SetIsPool(false);
+            }
+            
+            return c2G_CreatePlayerRequest;
+        }
+        
+        public void Return()
+        {
+            if (!AutoReturn)
+            {
+                SetIsPool(true);
+                AutoReturn = true;
+            }
+            else if (!IsPool())
+            {
+                return;
+            }
+            Dispose();
+        }
+
+        public void Dispose()
+        {
+            if (!IsPool()) return; 
+            MessageObjectPool<C2G_CreatePlayerRequest>.Return(this);
+        }
+        public uint OpCode() { return OuterOpcode.C2G_CreatePlayerRequest; } 
+        [ProtoIgnore]
+        public G2C_CreatePlayerResponse ResponseType { get; set; }
+    }
+    [Serializable]
+    [ProtoContract]
+    public partial class G2C_CreatePlayerResponse : AMessage, IResponse
+    {
+        public static G2C_CreatePlayerResponse Create(bool autoReturn = true)
+        {
+            var g2C_CreatePlayerResponse = MessageObjectPool<G2C_CreatePlayerResponse>.Rent();
+            g2C_CreatePlayerResponse.AutoReturn = autoReturn;
+            
+            if (!autoReturn)
+            {
+                g2C_CreatePlayerResponse.SetIsPool(false);
+            }
+            
+            return g2C_CreatePlayerResponse;
+        }
+        
+        public void Return()
+        {
+            if (!AutoReturn)
+            {
+                SetIsPool(true);
+                AutoReturn = true;
+            }
+            else if (!IsPool())
+            {
+                return;
+            }
+            Dispose();
+        }
+
+        public void Dispose()
+        {
+            if (!IsPool()) return; 
+            ErrorCode = 0;
+            MessageObjectPool<G2C_CreatePlayerResponse>.Return(this);
+        }
+        public uint OpCode() { return OuterOpcode.G2C_CreatePlayerResponse; } 
+        [ProtoMember(1)]
+        public uint ErrorCode { get; set; }
+    }
+    [Serializable]
+    [ProtoContract]
+    public partial class C2G_SendPlayerMessage : AMessage, IMessage
+    {
+        public static C2G_SendPlayerMessage Create(bool autoReturn = true)
+        {
+            var c2G_SendPlayerMessage = MessageObjectPool<C2G_SendPlayerMessage>.Rent();
+            c2G_SendPlayerMessage.AutoReturn = autoReturn;
+            
+            if (!autoReturn)
+            {
+                c2G_SendPlayerMessage.SetIsPool(false);
+            }
+            
+            return c2G_SendPlayerMessage;
+        }
+        
+        public void Return()
+        {
+            if (!AutoReturn)
+            {
+                SetIsPool(true);
+                AutoReturn = true;
+            }
+            else if (!IsPool())
+            {
+                return;
+            }
+            Dispose();
+        }
+
+        public void Dispose()
+        {
+            if (!IsPool()) return; 
+            MessageObjectPool<C2G_SendPlayerMessage>.Return(this);
+        }
+        public uint OpCode() { return OuterOpcode.C2G_SendPlayerMessage; } 
+    }
 }
