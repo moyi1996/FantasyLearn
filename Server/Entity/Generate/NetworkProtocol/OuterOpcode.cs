@@ -14,5 +14,12 @@ namespace Fantasy
         public const uint C2G_CreatePlayerRequest = 268445458;
         public const uint G2C_CreatePlayerResponse = 402663187;
         public const uint C2G_SendPlayerMessage = 134227731;
+        public const uint C2Chat_TestMessage = 2550146833;
+        public const uint C2Map_TestMessage = 2550146834;
+        public const uint G2Chat_TestMessage = 2550146835;
+        public const uint C2Chat_GetDataRequest = 2684364561;
+        public const uint Chat2C_GetDataResponse = 2818582289;
+        public const uint G2Map_GetPlayerRequest = 2684364562;
+        public const uint Map2G_GetPlayerResponse = 2818582290;
     }
 }

@@ -51,3 +51,43 @@ message C2G_SendPlayerMessage // IMessage
 {
 
 }
+
+/// 客户端到聊天服务器的Message消息
+message C2Chat_TestMessage // IRoamingMessage,ChatRoamingType
+{
+    string Tag = 1;
+}
+// 客户端到 Map 的单向消息
+message C2Map_TestMessage // IRoamingMessage,MapRoamingType
+{
+    string Tag = 1;
+}
+
+// Gate 到 Chat 的单向消息
+message G2Chat_TestMessage // IRoamingMessage,ChatRoamingType
+{
+    string Content = 1;
+}
+
+// 客户端到 Chat 的 RPC 请求
+message C2Chat_GetDataRequest // IRoamingRequest,Chat2C_GetDataResponse,ChatRoamingType
+{
+    int64 PlayerId = 1;
+}
+
+message Chat2C_GetDataResponse // IRoamingResponse
+{
+    string ChatData = 1;
+}
+
+// Gate 到 Map 的 RPC 请求
+message G2Map_GetPlayerRequest // IRoamingRequest,Map2G_GetPlayerResponse,MapRoamingType
+{
+    int64 PlayerId = 1;
+}
+
+message Map2G_GetPlayerResponse // IRoamingResponse
+{
+    string PlayerName = 1;
+    int32 Level = 2;
+}

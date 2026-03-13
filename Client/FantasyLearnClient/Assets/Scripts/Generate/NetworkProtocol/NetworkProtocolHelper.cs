@@ -66,6 +66,66 @@ namespace Fantasy
 			using var message = Fantasy.C2G_SendPlayerMessage.Create();
 			session.Send(message);
 		}
+		[MethodImpl(MethodImplOptions.AggressiveInlining)]
+		public static void C2Chat_TestMessage(this Session session, C2Chat_TestMessage C2Chat_TestMessage_message)
+		{
+			session.Send(C2Chat_TestMessage_message);
+		}
+		[MethodImpl(MethodImplOptions.AggressiveInlining)]
+		public static void C2Chat_TestMessage(this Session session, string tag)
+		{
+			using var C2Chat_TestMessage_message = Fantasy.C2Chat_TestMessage.Create();
+			C2Chat_TestMessage_message.Tag = tag;
+			session.Send(C2Chat_TestMessage_message);
+		}
+		[MethodImpl(MethodImplOptions.AggressiveInlining)]
+		public static void C2Map_TestMessage(this Session session, C2Map_TestMessage C2Map_TestMessage_message)
+		{
+			session.Send(C2Map_TestMessage_message);
+		}
+		[MethodImpl(MethodImplOptions.AggressiveInlining)]
+		public static void C2Map_TestMessage(this Session session, string tag)
+		{
+			using var C2Map_TestMessage_message = Fantasy.C2Map_TestMessage.Create();
+			C2Map_TestMessage_message.Tag = tag;
+			session.Send(C2Map_TestMessage_message);
+		}
+		[MethodImpl(MethodImplOptions.AggressiveInlining)]
+		public static void G2Chat_TestMessage(this Session session, G2Chat_TestMessage G2Chat_TestMessage_message)
+		{
+			session.Send(G2Chat_TestMessage_message);
+		}
+		[MethodImpl(MethodImplOptions.AggressiveInlining)]
+		public static void G2Chat_TestMessage(this Session session, string content)
+		{
+			using var G2Chat_TestMessage_message = Fantasy.G2Chat_TestMessage.Create();
+			G2Chat_TestMessage_message.Content = content;
+			session.Send(G2Chat_TestMessage_message);
+		}
+		[MethodImpl(MethodImplOptions.AggressiveInlining)]
+		public static async FTask<Chat2C_GetDataResponse> C2Chat_GetDataRequest(this Session session, C2Chat_GetDataRequest C2Chat_GetDataRequest_request)
+		{
+			return (Chat2C_GetDataResponse)await session.Call(C2Chat_GetDataRequest_request);
+		}
+		[MethodImpl(MethodImplOptions.AggressiveInlining)]
+		public static async FTask<Chat2C_GetDataResponse> C2Chat_GetDataRequest(this Session session, long playerId)
+		{
+			using var C2Chat_GetDataRequest_request = Fantasy.C2Chat_GetDataRequest.Create();
+			C2Chat_GetDataRequest_request.PlayerId = playerId;
+			return (Chat2C_GetDataResponse)await session.Call(C2Chat_GetDataRequest_request);
+		}
+		[MethodImpl(MethodImplOptions.AggressiveInlining)]
+		public static async FTask<Map2G_GetPlayerResponse> G2Map_GetPlayerRequest(this Session session, G2Map_GetPlayerRequest G2Map_GetPlayerRequest_request)
+		{
+			return (Map2G_GetPlayerResponse)await session.Call(G2Map_GetPlayerRequest_request);
+		}
+		[MethodImpl(MethodImplOptions.AggressiveInlining)]
+		public static async FTask<Map2G_GetPlayerResponse> G2Map_GetPlayerRequest(this Session session, long playerId)
+		{
+			using var G2Map_GetPlayerRequest_request = Fantasy.G2Map_GetPlayerRequest.Create();
+			G2Map_GetPlayerRequest_request.PlayerId = playerId;
+			return (Map2G_GetPlayerResponse)await session.Call(G2Map_GetPlayerRequest_request);
+		}
 
    }
 }

@@ -2,6 +2,7 @@ using Fantasy.Async;
 using Fantasy.Entitas;
 using Fantasy.Network;
 using Fantasy.Network.Interface;
+using Fantasy.Network.Roaming;
 using Fantasy.Platform.Net;
 
 namespace Fantasy.Hotfix.Handler
@@ -12,7 +13,7 @@ namespace Fantasy.Hotfix.Handler
         {
             // 业务逻辑处理
             Log.Debug($"收到客户端消息");
-
+#if AddressMessage  //服务器之间消息传递
             // 获取目标Scene
             var aGSceneConfig = SceneConfigData.Instance.GetSceneBySceneType(SceneType.AGMap)[0];
             // 获取目标Scene的Address
@@ -37,6 +38,23 @@ namespace Fantasy.Hotfix.Handler
                 session.AddComponent<PlayerFlagComponet>().PlayerAddress = createPlayerResponse.PlayerAddress;
 
             }
+#endif
+
+#if Roaming || true //漫游消息
+            // 第一步 创建Roaming
+            var roaming = await session.CreateRoaming(1);
+            // 第二步 链接到Map服务器
+            var aGSceneConfig = SceneConfigData.Instance.GetSceneBySceneType(SceneType.AGMap)[0];
+            var errorCode = await roaming.Link(session, aGSceneConfig, RoamingType.ChatRoamingType);
+            if (errorCode != 0)
+            {
+                Log.Error($"无法Link链接到Map服务器: {errorCode}");
+            }
+            else
+            {
+                Log.Debug($"Link链接到Map服务器成功");
+            }
+#endif
 
             await FTask.CompletedTask;
         }
