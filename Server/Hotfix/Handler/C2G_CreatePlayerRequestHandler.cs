@@ -40,7 +40,7 @@ namespace Fantasy.Hotfix.Handler
             }
 #endif
 
-#if Roaming || true //漫游消息
+#if Roaming  //漫游消息
             // 第一步 创建Roaming
             var roaming = await session.CreateRoaming(1);
             // 第二步 链接到Map服务器
@@ -56,6 +56,22 @@ namespace Fantasy.Hotfix.Handler
             }
 #endif
 
+#if SphereEvent || true
+            var aGSceneConfig = SceneConfigData.Instance.GetSceneBySceneType(SceneType.AGMap)[0];
+            var address = aGSceneConfig.Address;
+            // 订阅 Gate 服务器的 PlayerLevelChangedEvent
+            await session.Scene.SphereEventComponent.Subscribe<PlayerLevelChangedEvent>(address);
+            Log.Info("✅ Map 服务器已订阅 Gate 的 PlayerLevelChangedEvent");
+            // 发布 PlayerLevelChangedEvent
+            var createPlayerResponse = (Map2G_CreatePlayerResponse)await session.Scene.Call(address,
+                new G2Map_CreatePlayerRequest()
+            {
+                Name = "Fantasy",
+                Age = "18"
+            });
+
+            
+#endif
             await FTask.CompletedTask;
         }
     }

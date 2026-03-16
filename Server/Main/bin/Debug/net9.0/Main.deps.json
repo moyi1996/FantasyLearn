@@ -35,7 +35,7 @@
           }
         }
       },
-      "Fantasy-Net/2026.0.1002": {
+      "Fantasy-Net/2026.0.1003": {
         "dependencies": {
           "CommandLineParser": "2.9.1",
           "MemoryPack.Core": "1.21.4",
@@ -147,7 +147,7 @@
       },
       "Entity/1.0.0": {
         "dependencies": {
-          "Fantasy-Net": "2026.0.1002"
+          "Fantasy-Net": "2026.0.1003"
         },
         "runtime": {
           "Entity.dll": {
@@ -189,12 +189,12 @@
       "path": "dnsclient/1.6.1",
       "hashPath": "dnsclient.1.6.1.nupkg.sha512"
     },
-    "Fantasy-Net/2026.0.1002": {
+    "Fantasy-Net/2026.0.1003": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-U33W9je8sWHt+ki7Ip76j7Fqo/T8ARWaUHHHXR/49Gjbso0cYe1rM3WKTEH8MiCjEnjJI1RYU7UPIgR2n/6xlA==",
-      "path": "fantasy-net/2026.0.1002",
-      "hashPath": "fantasy-net.2026.0.1002.nupkg.sha512"
+      "sha512": "sha512-TF91gqSuLkUFmjninQ9//V5BAh/DV4d/8Z33cf0nHjtTIdprjSFeirTb6BO6cSPHX8UBdlofe5nQH/5AXcX0ow==",
+      "path": "fantasy-net/2026.0.1003",
+      "hashPath": "fantasy-net.2026.0.1003.nupkg.sha512"
     },
     "MemoryPack.Core/1.21.4": {
       "type": "package",

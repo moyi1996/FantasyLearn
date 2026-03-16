@@ -14,9 +14,9 @@
     <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
   </ItemGroup>
   <ImportGroup Condition=" '$(TargetFramework)' == 'net8.0' AND '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Import Project="$(NuGetPackageRoot)fantasy-net\2026.0.1002\build\Fantasy-Net.props" Condition="Exists('$(NuGetPackageRoot)fantasy-net\2026.0.1002\build\Fantasy-Net.props')" />
+    <Import Project="$(NuGetPackageRoot)fantasy-net\2026.0.1003\build\Fantasy-Net.props" Condition="Exists('$(NuGetPackageRoot)fantasy-net\2026.0.1003\build\Fantasy-Net.props')" />
   </ImportGroup>
   <ImportGroup Condition=" '$(TargetFramework)' == 'net9.0' AND '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Import Project="$(NuGetPackageRoot)fantasy-net\2026.0.1002\build\Fantasy-Net.props" Condition="Exists('$(NuGetPackageRoot)fantasy-net\2026.0.1002\build\Fantasy-Net.props')" />
+    <Import Project="$(NuGetPackageRoot)fantasy-net\2026.0.1003\build\Fantasy-Net.props" Condition="Exists('$(NuGetPackageRoot)fantasy-net\2026.0.1003\build\Fantasy-Net.props')" />
   </ImportGroup>
 </Project>

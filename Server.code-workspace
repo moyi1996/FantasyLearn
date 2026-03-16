@@ -1,0 +1,21 @@
+{
+	"folders": [
+		{
+			"path": "Server"
+		},
+		{
+			"path": "Config"
+		},
+		{
+			"path": "Tools"
+		},
+		{
+			"path": "Client/FantasyLearnClient"
+		}
+	],
+    "settings": {
+        "dotrush.roslyn.projectOrSolutionFiles": [
+            "f:\\UnityGit\\FantasyLearnServer\\FantansyLearnServer\\Server\\Server.sln"
+        ]
+    }
+}
